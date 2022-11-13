@@ -5,7 +5,9 @@
     font-family: 'Basic';
     list-style: none;
 }
-
+html{
+    overflow-x: hidden;
+}
 /* dekstop version */
 /* header */
 #header {
@@ -84,7 +86,7 @@
     font-weight: 400;
     font-size: 12px;
     text-decoration: none;
-    padding: 12px 30px 12px 15px;
+    padding: 12px 30px 12px 30px;
 }
 
 /* pop up project */
@@ -262,17 +264,19 @@
     left: -141px;
 }
 #service {
+    position: absolute;
+    height: 2332px;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 90px;
+    margin-top: 514px;
     padding-bottom: 90px;
-    background: linear-gradient(to bottom,
-            #fff 0%,
-            #fff 50%,
-            #020E35 50%,
-            #020E35);
+    background-color: #020E35;
 }
+
 #service .service-title {
+    position: relative;
+    margin-top: -392px;
     padding-bottom: 50px;
     font-family: Basic;
     font-size: 40px;
@@ -386,4 +390,182 @@
     margin-left: 31px;
     width: 15px;
     height: 25px;
+}
+.ow-title{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+.undrline {
+    margin-left: 710px;
+}
+.ow1 {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 212px;
+    color: #FFFFFF;
+}
+.ow1_img {
+    width: 587px;
+    height: 390px;
+}
+.ow1_1{
+    color: var(--third-color);
+    margin-left: 20px;
+}
+.ow1_1 h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;}
+.ow1_1 h5 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+}
+.ow1_1 p{
+    margin-top: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.ow2 {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 207px;
+    color: #FFFFFF;
+}
+.ow2_img {
+    width: 587px;
+    height: 390px;
+}
+.ow2_1{
+    color: var(--third-color);
+    margin-right: 20px;
+    text-align: right;
+}
+.ow2_1 h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;}
+.ow2_1 h5 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+}
+.ow2_1 p{
+    margin-top: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.ow3 {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 212px;
+    color: #FFFFFF;
+}
+.btn1{
+   margin-left: 650px;
+   margin-top: 60px;
+}
+#service .btn-hero{
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 12px 30px 12px 30px;
+}
+
+#contact{
+    padding-left: 135px;
+    height: 690px;
+    padding-top: 200px;
+    color: #020E35;
+    display: flex;
+}
+#contact .p1{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+}
+#contact .p2{
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 110px;
+}
+#contact .p2 span{
+    color: #E73587;
+}
+.contact1{
+    margin-left: 43px;
+}
+::placeholder{
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    color: #2C3241;
+}
+.contact1 .input1 {
+    width: 554px;
+    height: 48px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+
+.label1{
+    margin-top: 32px;
+    font-weight: 700;
+}
+.label1 ::placeholder{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    opacity: 100%;
+}
+.label2{
+    margin-top: 32px;
+}
+.contact1 .input2 {
+    width: 554px;
+    height: 168px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    resize: none;
+    margin-bottom: 50px;
+  }
+.btn-submit{
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+    text-decoration: none;
+    padding: 18px 215.5px 17px 214.5px;
+    margin-top: 5000px;
+}
+.footer{
+    padding-left: 135px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    position: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #020E35;
 }
