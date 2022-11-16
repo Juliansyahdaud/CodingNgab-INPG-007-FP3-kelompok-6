@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodingNgab</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/d3761eae1f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/icon.ico">
 </head>
 <body>
-    <!-- header -->
     <header id="header">
         <div class="header-logo">
             <img src="./img/logo.png" alt="logo">
@@ -18,19 +18,19 @@
         <nav class="header-menu">
             <ul>
                 <li>
-                    <a href="">HOME</a>
+                    <a href="#hero">HOME</a>
                 </li>
                 <li>
-                    <a href="">ABOUT</a>
+                    <a href="#about-us">ABOUT</a>
                 </li>
                 <li>
-                    <a href="">SERVICES</a>
+                    <a href="#service">SERVICES</a>
                 </li>
                 <li>
-                    <a href="">PORTFOLIO</a>
+                    <a  class="btn-hero" href="#">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="" class="btn-header-menu">CONTACT US</a>
+                    <a href="#contact" class="btn-header-menu">CONTACT US</a>
                 </li>
             </ul>
         </nav>
@@ -39,7 +39,6 @@
         </div>
     </header>
 
-    <!-- hero section -->
     <section id="hero">
         <div class="hero-text">
             <h1>
@@ -50,13 +49,26 @@
             </a>
         </div>
         <div class="hero-img">
-            <img src="./img/hero.png" alt="" srcset="">
+            <img src="./img/hero.png" alt="#">
         </div>
     </section>
 
-    <!-- project pop up layer -->
-    <section id="project-layer"></section>
+    <div id="project-layer"></div>
     <section id="project">
+        <div class="sub-project">
+            <h4>Final Project 1</h4>
+            <img src="./img/fp1.png" alt="">
+            <a href="https://finalproject1-kelompok6.netlify.app/" class="project-link" target="_blank">
+                View Project
+            </a>
+        </div>
+        <div class="sub-project">
+            <h4>Project 2</h4>
+            <img src="./img/fp2.png" alt="">
+            <a href="https://codingngab-kelompok-6.herokuapp.com/" class="project-link" target="_blank">
+                View Project
+            </a>
+        </div>
         <div class="sub-project">
             <h4>Assignment1-Juliansyah Daud</h4>
             <img src="./img/project-1.png" alt="">
@@ -68,20 +80,6 @@
             <h4>Assignment2-Juliansyah Daud</h4>
             <img src="./img/project-2.png" alt="">
             <a href="https://assignment2-juliansyah-daud.netlify.app/" class="project-link" target="_blank">
-                View Project
-            </a>
-        </div>
-        <div class="sub-project">
-            <h4>Project 3</h4>
-            <img src="./img/project-1.png" alt="">
-            <a href="http://project-1.com" class="project-link" target="_blank">
-                View Project
-            </a>
-        </div>
-        <div class="sub-project">
-            <h4>Project 4</h4>
-            <img src="./img/project-2.png" alt="">
-            <a href="http://project-1.com" class="project-link" target="_blank">
                 View Project
             </a>
         </div>
@@ -100,11 +98,10 @@
             </a>
         </div>
     </section>
-    
-        <!-- About Us -->
+
         <section id="about-us">
             <div id="about-content">
-                <img class="img-oval" src="img/oval.PNG">
+                <img class="img-oval" alt="#" src="./img/oval.PNG">
                 <h1 class="about-title"><u class="bottom-line">About Us</u></h1>
                 <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -112,14 +109,13 @@
             </div>
         </section>
     
-        <!-- Our Service -->
         <section id="service">
             <div id="service-content">
                 <h1 class="service-title"><u class="bottom-line">Our Valuable Services</u></h1>
                 <div class="container">
                     <div class="card1">
                         <div class="card_header">
-                            <img src="img/bitmap.PNG" alt="card__image" class="card__image" height="284" width="319">
+                            <img src="./img/bitmap.PNG" alt="card__image" class="card__image" height="284" width="319">
                         </div>
                         <div class="card_body">
                             <h4>App Development</h4>
@@ -132,7 +128,7 @@
                     </div>
                     <div class="card2">
                         <div class="card_header">
-                            <img src="img/bitmap2.PNG" alt="card__image" class="card__image" height="238" width="274">
+                            <img src="./img/bitmap2.PNG" alt="card__image" class="card__image" height="238" width="274">
                         </div>
                         <div class="card_body">
                             <h4>Web Development</h4>
@@ -145,7 +141,7 @@
                     </div>
                     <div class="card3">
                         <div class="card_header">
-                            <img src="img/bitmap3.PNG" alt="card__image" class="card__image" height="255" width="300">
+                            <img src="./img/bitmap3.PNG" alt="card__image" class="card__image" height="255" width="300">
                         </div>
                         <div class="card_body">
                             <h4>UI UX Design</h4>
@@ -156,12 +152,11 @@
                             READ MORE
                         </a>
                     </div>
-                    <a href="#" id="oval"><img class="btn-img" src="img/path_2.PNG"></a>
+                    <a href="#" id="oval"><img alt="#" class="btn-img" src="./img/path_2.PNG"></a>
                 </div>
             </div>
 
             <h1 class="ow-title">Our Work</h1>
-            <img class="undrline" src="./img/undrline.PNG" alt="#">
             <div class="ow1">
                 <img class="ow1_img" src="./img/ow1.PNG" alt="#">
                 <div class="ow1_1">
@@ -180,7 +175,7 @@
                 <img class="ow2_img" src="./img/ow2.PNG"  alt="#">
             </div>
 
-            <div class="ow3">
+            <div class="ow1">
                 <img class="ow1_img" src="./img/ow3.PNG" alt="#">
                 <div class="ow1_1">
                     <h1>Brand Name</h1>
@@ -199,45 +194,45 @@
             </div>
 
             <div class="btn1">
-                <a href="#" class="btn-hero">
+                <a href="#" class="btn-hero1">
                     SEE OUR WORK
                 </a>    
             </div>
 
-            <section id="contact">
-                <div>
-                    <p class="p1">Questions, Comments, Concerns?</p>
-                    <p class="p2">We'd love to</p>
-                    <p class="p2"><span>hear</span> from you!</p>
-                </div>
-                <div class="contact1">
-                    <div>
-                        <label>Your Email Address</label><br>
-                        <input type="email" class="input1" name="firstname" placeholder="Something@website.com">
-                    </div>
-                    <div class="label1">
-                        <label>Subject</label><br>
-                        <input type="email" class="input1" name="firstname" placeholder="Question about your article">
-                    </div>
-
-                    <div class="label2">
-                        <label>Message</label><br>
-                        <textarea class="input2" name="name" cols="82" placeholder="Your message starts with..." rows="8"></textarea>                    
-                    </div>
-                    <a href="#" class="btn-submit">
-                            Send a message
-                    </a>    
-                </div>
-            </section>
-            <div class="footer">
-                <p>2020 © All rights reserved by CodingNgab</p>
-            </div>
         </section>
 
-        
+        <div id="contact">
+            <div>
+                <p class="p1">Questions, Comments, Concerns?</p>
+                <p class="p2">We'd love to</p>
+                <p class="p2"><span>hear</span> from you!</p>
+            </div>
+            <div class="contact1">
+                <div>
+                    <label>Your Email Address</label><br>
+                    <input type="email" class="input1" name="firstname" placeholder="Something@website.com">
+                </div>
+                <div class="label1">
+                    <label>Subject</label><br>
+                    <input type="email" class="input1" name="firstname" placeholder="Question about your article">
+                </div>
 
+                <div class="label2">
+                    <label>Message</label><br>
+                    <textarea class="input2" name="name" cols="82" placeholder="Your message starts with..." rows="8"></textarea>                    
+                </div>
+                <a href="#" class="btn-submit">
+                        Send a message
+                </a>    
+            </div>
+        </div>
 
-    
+        <div class="footer">
+            <p>2020 © All rights reserved by CodingNgab</p>
+        </div>
+
+        <button onclick="topFunction()" id="topBtn" class="fa-solid fa-circle-chevron-up"></button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.js"></script>
 </body>
