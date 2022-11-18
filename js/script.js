@@ -1,10 +1,17 @@
 const humbergerMenuToggle = document.querySelector('.header-burger-menu');
 const menu = document.querySelector('.header-menu');
 const btnHero = document.querySelector('.btn-hero');
-const btnHero1 = document.querySelector('.btn-hero1')
+const btnHero1 = document.querySelector('.btn-hero1');
+const btnHero2 = document.querySelector('.btn-hero2');
 const projectLayer = document.querySelector('#project-layer');
 const project = document.querySelector('#project');
+const preload = document.querySelector('#preload');
+const html = document.querySelector('html')
+var a = setTimeout(load,2000);
 
+function load(){
+  preload.style.display = 'none';
+}
 humbergerMenuToggle.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
@@ -12,10 +19,12 @@ btnHero.addEventListener('click', (e) => {
     e.preventDefault();
     projectLayer.classList.add('active');
     project.classList.add('active');
+    html.classList.add('hidden-ovrflw')
 })
 projectLayer.addEventListener('click', (e) => {
     projectLayer.classList.remove('active');
     project.classList.remove('active');
+    html.classList.remove('hidden-ovrflw')
 })
 btnHero1.addEventListener('click', (e) => {
     e.preventDefault();
@@ -23,6 +32,13 @@ btnHero1.addEventListener('click', (e) => {
     document.documentElement.scrollTop = 0; 
     projectLayer.classList.add('active');
     project.classList.add('active');
+    html.classList.add('hidden-ovrflw')
+})
+btnHero2.addEventListener('click', (e) => {
+  e.preventDefault();
+  projectLayer.classList.add('active');
+  project.classList.add('active');
+  html.classList.add('hidden-ovrflw')
 })
 
 let topButton = document.getElementById("topBtn");

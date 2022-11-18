@@ -13,8 +13,107 @@ body{
     position: relative;
 }
 .hidden-ovrflw {
-    overflow-y: hidden;
+    overflow: hidden;
 }
+#preload{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #020E35;
+    z-index: 999;
+}
+.wrapper {
+    margin-left: 650px;
+    margin-top: 300px;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+
+
 #header {
     height: 80px;
     background-color: #fff;
@@ -304,14 +403,13 @@ body{
 
 #our-work {
     background: #020E35;
-    position: absolute;
     height: 2100px; 
     width: 100%;
     align-items: center;
     justify-content: center;
     padding-top: 90px;
 }  
-  .ow-title{
+.ow-title{
     color: #ffffff;
     font-weight: 400;
     font-size: 40px;
@@ -323,7 +421,6 @@ body{
     display: flex;
     margin-top: 60px;
     margin-left: 135px;
-    margin-right: 50px;
     color: #FFFFFF;
 }
 .ow1_img {
@@ -398,11 +495,12 @@ body{
 }
 
 #contact{
+    padding-top: 100px;
     padding-left: 135px;
     height: 690px;
-    padding-top: 2300px;
     color: #020E35;
     display: flex;
+    padding-bottom: 100px;
 }
 #contact .p1{
     font-weight: 400;
@@ -417,7 +515,7 @@ body{
 #contact .p2 span{
     color: #E73587;
 }
-.contact1{
+#contact1{
     margin-left: 43px;
 }
 ::placeholder{
@@ -427,7 +525,7 @@ body{
     line-height: 36px;
     color: #2C3241;
 }
-.contact1 .input1 {
+#contact1 .input1 {
     width: 554px;
     height: 48px;
     padding: 12px 20px;
@@ -449,7 +547,7 @@ body{
 .label2{
     margin-top: 32px;
 }
-.contact1 .input2 {
+#contact1 .input2 {
     width: 554px;
     height: 168px;
     padding: 12px 20px;
@@ -457,9 +555,12 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     resize: none;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 .btn-submit{
+    padding-top: 18px;
+    text-align: center;
+    position: absolute;
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
     color: #fff;
     font-style: normal;
@@ -467,8 +568,8 @@ body{
     font-size: 18px;
     line-height: 13px;
     text-decoration: none;
-    padding: 18px 215.5px 17px 214.5px;
-    margin-top: 5000px;
+    width: 554px;
+    height: 30px;
 }
 .footer{
     padding-left: 135px;
@@ -531,11 +632,14 @@ body{
     }
     #hero .hero-img img {
         width: 500px;
-    }    
+    }   
+    #our-work{
+        height: 1500px;
+    }
     .ow1{
-        margin-right: 62px;
-        margin-left: 15px;
+        margin-left: 25px;
         margin-top: 80px;
+        margin-right: 10px;
     }
     .ow1_img{
         width: 437px;
@@ -558,9 +662,9 @@ body{
         line-height: 20px;
     }
     .ow2{
-        margin-left: 62px;
-        margin-right: 15px;
-        margin-top: 80px;
+        text-align: right;
+        margin-right: 25px;
+        margin-left: 10px;
     }
     .ow2_img{
         width: 437px;
@@ -583,8 +687,9 @@ body{
         line-height: 20px;
     }
     #contact{
+        display: block;
         padding-left: 55px;
-        padding-right: 15px;
+        margin-top: 0px;
     }
     #contact .p1{
         font-weight: 400;
@@ -596,15 +701,7 @@ body{
         font-size: 40px;
         line-height: 110px;
     }
-    .contact1 .input1 {
-        width: 400px;
-    }
-    .contact1 .input2 {
-        width: 400px;
-    }
-    .btn-submit{
-        padding: 18px 137px 17px 137px;
-    }
+
   }
 
   @media screen and (max-width: 768px) {
@@ -691,26 +788,8 @@ body{
     #about-us .img-oval {
         width: 200px;
     }
-    #service {
-        margin-top: 350px;
-        height: 2100px;
-    }
-    #contact{
-        padding-top: 2600px;
-    }
-    #contact{
-        padding-left: 15px;
-    }
     .footer{
         padding-left: 50px;
-    }
-}
-@media screen and (max-width: 711px) {
-    #service {
-        height: 2200px;
-    }
-    #contact{
-        padding-top: 2700px;
     }
 }
 @media screen and (max-width: 697px) {
@@ -751,25 +830,34 @@ body{
         font-size: 12px;
     }
     #contact{
+        padding-left: 10px;
         padding-bottom: 100px;
         display: block;
     }
     #contact .p1{
-        text-align: center;
         font-size: 15px;
     }
     #contact .p2{
-        text-align: center;
         font-size: 30px;
     }
-    .contact1{
-        text-align: center;
+    #contact1 .input1 {
+        width: 400px;
     }
-
+    #contact1 .input2 {
+        width: 400px;
+    }
+    .btn-submit{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 574px) {
+    #our-work{
+        height: 1800px;
+    }
 }
 @media screen and (max-width: 564px) {
-    #service {
-        height: 2000px;
+    #our-work{
+        height: 1400px;
     }
     .ow1_img{
         padding-top: 80px;
@@ -781,24 +869,16 @@ body{
         width: 100px;
         height: 75px;
     }
-    #contact{
-        padding-top: 2500px;
+    #contact1 .input1 {
+        width: 300px;
     }
-    .contact1 .input1 {
-        width: 275px;
+    #contact1 .input2 {
+        width: 300px;
     }
-    .contact1 .input2 {
-        width: 275px;
+    .btn-submit {
+        width: 300px;
     }
-    .btn-submit{
-        padding: 12px 75px 11px 75px;
-    }
-}
-@media screen and (max-width: 544px) {
-    #service {
-        height: 2550px;
-    }
-    #contact{
-        padding-top: 3000px;
+    #topBtn {
+        margin-right: 25px;
     }
 }
