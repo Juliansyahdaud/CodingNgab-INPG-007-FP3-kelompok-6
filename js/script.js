@@ -86,3 +86,28 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
+const darkBtn = document.querySelector('.icon');
+const body = document.querySelector('body');
+
+const darkmode = () =>{
+  body.classList.toggle('dark')
+}
+
+darkBtn.addEventListener('click', () =>{
+  setDarkMode = localStorage.getItem('dark');
+  if(setDarkMode !== "on"){
+    darkmode();
+    setDarkMode = localStorage.setItem('dark', 'on');
+    darkBtn.src = "img/sun.png"
+  }else{
+    darkmode();
+    setDarkMode = localStorage.setItem('dark', 'null');
+    darkBtn.src = "img/moon.png"
+  }
+
+});
+
+let setDarkMode = localStorage.getItem('dark');
+if(setDarkMode === 'on'){
+  darkmode();
+}
