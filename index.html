@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodingNgab</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://kit.fontawesome.com/d3761eae1f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="img/icon.ico">
 </head>
 <body>
@@ -27,7 +30,7 @@
                     <a href="#service">SERVICES</a>
                 </li>
                 <li>
-                    <a  class="btn-hero" href="#">PORTFOLIO</a>
+                    <a class="btn-hero" href="#">PORTFOLIO</a>
                 </li>
                 <li>
                     <a href="#contact" class="btn-header-menu">CONTACT US</a>
@@ -38,7 +41,6 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-
     <section id="hero">
         <div class="hero-text">
             <h1>
@@ -52,7 +54,6 @@
             <img src="./img/hero.png" alt="#">
         </div>
     </section>
-
     <div id="project-layer"></div>
     <section id="project">
         <div class="sub-project">
@@ -98,142 +99,194 @@
             </a>
         </div>
     </section>
-
-        <section id="about-us">
-            <div id="about-content">
-                <img class="img-oval" alt="#" src="./img/oval.PNG">
-                <h1 class="about-title"><u class="bottom-line">About Us</u></h1>
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </section>
-    
-        <section id="service">
-            <div id="service-content">
-                <h1 class="service-title"><u class="bottom-line">Our Valuable Services</u></h1>
-                <div class="container">
-                    <div class="card1">
-                        <div class="card_header">
-                            <img src="./img/bitmap.PNG" alt="card__image" class="card__image" height="284" width="319">
+    <section id="about-us">
+        <div id="about-content">
+            <img class="img-oval" alt="#" src="./img/oval.PNG">
+            <h1 class="about-title"><u class="bottom-line">About Us</u></h1>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+    <section id="service">
+        <h1 class="service-title"><u class="bottom-line">Our Valuable Services</u></h1>
+        <div class="outer-container swiper">
+            <div class="container swiper ">
+                <div class="slide-container">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card card1 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap.PNG" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>App Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
                         </div>
-                        <div class="card_body">
-                            <h4>App Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                        <div class="card card2 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap2.PNG" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>Web Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
                         </div>
-                        <a href="#" class="btn-service">
-                            READ MORE
-                        </a>
+                        <div class="card card3 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap3.PNG" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>UI UX Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
+                        </div>
+                        <div class="card card4 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap4.png" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>IT Constultant</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
+                        </div>
+                        <div class="card card5 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap5.png" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>IT Community</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
+                        </div>
+                        <div class="card card6 swiper-slide">
+                            <div class="image-box">
+                                <img src="img/bitmap6.png" alt="" />
+                            </div>
+                            <div class="card_body">
+                                <h4>IT Course Class</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                            <a href="#" class="btn-service">
+                                READ MORE
+                            </a>
+                        </div>
                     </div>
-                    <div class="card2">
-                        <div class="card_header">
-                            <img src="./img/bitmap2.PNG" alt="card__image" class="card__image" height="238" width="274">
-                        </div>
-                        <div class="card_body">
-                            <h4>Web Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
-                        </div>
-                        <a href="#" class="btn-service">
-                            READ MORE
-                        </a>
-                    </div>
-                    <div class="card3">
-                        <div class="card_header">
-                            <img src="./img/bitmap3.PNG" alt="card__image" class="card__image" height="255" width="300">
-                        </div>
-                        <div class="card_body">
-                            <h4>UI UX Design</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
-                        </div>
-                        <a href="#" class="btn-service">
-                            READ MORE
-                        </a>
-                    </div>
-                    <a href="#" id="oval"><img alt="#" class="btn-img" src="./img/path_2.PNG"></a>
                 </div>
             </div>
-
-            <h1 class="ow-title">Our Work</h1>
-            <div class="ow1">
-                <img class="ow1_img" src="./img/ow1.PNG" alt="#">
-                <div class="ow1_1">
-                    <h1>Brand Name</h1>
-                    <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
-                </div>        
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section id="our-work">
+        <h1 class="ow-title">Our Work</h1>
+        <div class="ow1">
+            <img class="ow1_img" src="./img/ow1.PNG" alt="#">
+            <div class="ow1_1">
+                <h1>Brand Name</h1>
+                <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
             </div>
-
-            <div class="ow2">
-                <div class="ow2_1">
-                    <h1>Brand Name</h1>
-                    <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
-                </div>        
-                <img class="ow2_img" src="./img/ow2.PNG"  alt="#">
+        </div>
+        <div class="ow2">
+            <div class="ow2_1">
+                <h1>Brand Name</h1>
+                <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
             </div>
-
-            <div class="ow1">
-                <img class="ow1_img" src="./img/ow3.PNG" alt="#">
-                <div class="ow1_1">
-                    <h1>Brand Name</h1>
-                    <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
-                </div>        
+            <img class="ow2_img" src="./img/ow2.PNG" alt="#">
+        </div>
+        <div class="ow1">
+            <img class="ow1_img" src="./img/ow3.PNG" alt="#">
+            <div class="ow1_1">
+                <h1>Brand Name</h1>
+                <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
             </div>
-
-            <div class="ow2">
-                <div class="ow2_1">
-                    <h1>Brand Name</h1>
-                    <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
-                </div>        
-                <img class="ow2_img" src="./img/ow4.PNG"  alt="#">
+        </div>
+        <div class="ow2">
+            <div class="ow2_1">
+                <h1>Brand Name</h1>
+                <h5>IOS | ANDROID | WEB DEVELOPMENT</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
             </div>
-
-            <div class="btn1">
-                <a href="#" class="btn-hero1">
-                    SEE OUR WORK
-                </a>    
-            </div>
-
-        </section>
-
-        <div id="contact">
+            <img class="ow2_img" src="./img/ow4.PNG" alt="#">
+        </div>
+        <div class="btn1">
+            <a href="#" class="btn-hero1">
+                SEE OUR WORK
+            </a>
+        </div>
+    </section>
+    <div id="contact">
+        <div>
+            <p class="p1">Questions, Comments, Concerns?</p>
+            <p class="p2">We'd love to</p>
+            <p class="p2"><span>hear</span> from you!</p>
+        </div>
+        <div class="contact1">
             <div>
-                <p class="p1">Questions, Comments, Concerns?</p>
-                <p class="p2">We'd love to</p>
-                <p class="p2"><span>hear</span> from you!</p>
+                <label>Your Email Address</label><br>
+                <input type="email" class="input1" name="firstname" placeholder="Something@website.com">
             </div>
-            <div class="contact1">
-                <div>
-                    <label>Your Email Address</label><br>
-                    <input type="email" class="input1" name="firstname" placeholder="Something@website.com">
-                </div>
-                <div class="label1">
-                    <label>Subject</label><br>
-                    <input type="email" class="input1" name="firstname" placeholder="Question about your article">
-                </div>
-
-                <div class="label2">
-                    <label>Message</label><br>
-                    <textarea class="input2" name="name" cols="82" placeholder="Your message starts with..." rows="8"></textarea>                    
-                </div>
-                <a href="#" class="btn-submit">
-                        Send a message
-                </a>    
+            <div class="label1">
+                <label>Subject</label><br>
+                <input type="email" class="input1" name="firstname" placeholder="Question about your article">
             </div>
+            <div class="label2">
+                <label>Message</label><br>
+                <textarea class="input2" name="name" cols="82" placeholder="Your message starts with..."
+                    rows="8"></textarea>
+            </div>
+            <a href="#" class="btn-submit">
+                Send a message
+            </a>
         </div>
-
-        <div class="footer">
-            <p>2020 © All rights reserved by CodingNgab</p>
-        </div>
-
-        <button onclick="topFunction()" id="topBtn" class="fa-solid fa-circle-chevron-up"></button>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+    <div class="footer">
+        <p>2020 © All rights reserved by CodingNgab</p>
+    </div>
+    <button onclick="topFunction()" id="topBtn" class="fa-solid fa-circle-chevron-up"></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

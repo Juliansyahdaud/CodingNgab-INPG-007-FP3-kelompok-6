@@ -149,6 +149,7 @@ body{
     color: #fff;
     text-decoration: none;
 }
+
 #about-us {
     align-items: center;
     padding-top: 90px;
@@ -181,135 +182,136 @@ body{
     position: absolute;
     left: -141px;
 }
-#service {
-    position: absolute;
-    height: 2332px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 514px;
-    padding-bottom: 90px;
-    background-color: #020E35;
-}
 
-#service .service-title {
-    position: relative;
-    margin-top: -392px;
-    padding-bottom: 50px;
+#service {
+    background: linear-gradient(to bottom,
+    #fff 0%,
+    #fff 50%,
+    #020E35 50%,
+    #020E35);
+  }
+   .service-title {
+    padding-top: 90px;
     font-family: Basic;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
     color: #020E35;
-}
-#service-content .container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: auto;
-    margin-block: 2rem;
-    gap: 1.5rem;
-    padding-bottom: 4%;
-}
-#service-content .card1 {
-    display: flex;
-    flex-direction: column;
-    width: 357px;
-    height: 540px;
+  }
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .outer-container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
     overflow: hidden;
+  }
+  .card {
+    height: 540px;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .card1 {
     background: #FDF8E3;
-}
-#service-content .card2 {
-    display: flex;
-    flex-direction: column;
-    width: 357px;
-    height: 540px;
-    overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .card2{
     background: #F0F3FA;
-}
-#service-content .card3 {
-    display: flex;
-    flex-direction: column;
-    width: 357px;
-    height: 540px;
-    overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .card3 {
     background: #FEEFF0;
-}
-#service-content .card_header {
-    margin: auto;
-}
-#service-content .card_body {
+  }
+  .card4 {
+    background: #7BCCB5;
+  }
+  .card5 {
+    background: #9CB071;
+  }
+  .card6 {
+    background: #C48189;
+  }
+  .card .image-box {
+    height: 300px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .card_body {
     padding-bottom: 2rem;
     display: flex;
     text-align: center;
     flex-direction: column;
     gap: .2rem;
-}
-#service-content .card_body h4 {
-    font-size: 20px;
+  }
+   .card_body h4 {
+    font-size: 17px;
     font-weight: 400;
     text-transform: capitalize;
+    padding-top: 20px;
     padding-bottom: 20px;
-}
-#service-content .card_body p {
-    font-size: 20px;
+  }
+   .card_body p {
+    font-size: 15px;
     font-weight: 400;
     padding-left: 20px;
     padding-right: 20px;
-}
-.btn-service {
+  }
+  .btn-service {
     width: 80px;
     margin-bottom: 30px;
     margin-left: 34%;
     padding-left: 50%;
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
-    border: 3px solid;
     color: #FFFFFF;
     padding: 15px 20px;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    font-weight: 400;
-    transition: .4s linear;
-}
-.btn-service:hover {
-    border-color: #020E35;
-
-}
-#oval {
-    position: absolute;
-    overflow: hidden;
-    width: 76px;
+    font-weight: 500;
+    transition: all .4s;
+  }
+  .btn-service:hover {
+    color: #020E35;
+  }
+  .swiper-navBtn {
+    color: #fff;
     height: 76px;
-    right: 10px;
-    top: 210px;
-    -ms-border-radius: 38px / 38px;
-    -o-border-radius: 38px / 38px;
-    -moz-border-radius: 38px / 38px;
-    -webkit-border-radius: 38px / 38px;
-    border-radius: 38px / 38px;
-    border: 2px solid #ffffff;
-    background: rgba(255, 255, 255, 0);
-    background: -webkit-linear-gradient(-90deg, rgba(140, 50, 240, 1) 0%, rgba(231, 53, 135, 1) 100%);
-    background: -o-linear-gradient(-90deg, rgba(140, 50, 240, 1) 0%, rgba(231, 53, 135, 1) 100%);
-    background: -moz-linear-gradient(-90deg, rgba(140, 50, 240, 1) 0%, rgba(231, 53, 135, 1) 100%);
-    background: -ms-linear-gradient(-90deg, rgba(140, 50, 240, 1) 0%, rgba(231, 53, 135, 1) 100%);
-    background: linear-gradient(-90deg, rgba(140, 50, 240, 1) 0%, rgba(231, 53, 135, 1) 100%);
-}
-#oval:hover {
-    border-color: #020E35;
-}
-.btn-img {
-    margin-top: 26px;
-    margin-left: 31px;
-    width: 15px;
-    height: 25px;
-}
-.ow-title{
+    width: 76px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    border-radius: 50%;
+    transition: all 4.s;
+  }
+  .swiper-navBtn:hover {
+    color: #020E35;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #E73587;
+  } 
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+
+#our-work {
+    background: #020E35;
+    position: absolute;
+    height: 2100px; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}  
+  .ow-title{
     color: #ffffff;
     font-weight: 400;
     font-size: 40px;
@@ -385,7 +387,7 @@ body{
     text-align: center;
     margin-top: 60px;
 }
-#service .btn-hero1{
+#our-work .btn-hero1{
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
     color: #fff;
     font-style: normal;
@@ -398,7 +400,7 @@ body{
 #contact{
     padding-left: 135px;
     height: 690px;
-    padding-top: 3000px;
+    padding-top: 2300px;
     color: #020E35;
     display: flex;
 }
@@ -693,32 +695,6 @@ body{
         margin-top: 350px;
         height: 2100px;
     }
-    #service-content .card1 {
-        width: 257px;
-        height: 440px;
-    }
-    #service-content .card2 {
-        width: 257px;
-        height: 440px;
-    }
-    #service-content .card3 {
-        width: 257px;
-        height: 440px;
-    }
-    .card_header img{
-        width: 150px;
-        height: 150px;
-    }
-    #service-content .card_body h4 {
-        font-size: 18px;
-    }
-    #service-content .card_body p {
-        font-size: 17px;
-    }
-    .btn-service {
-        width: 60px;
-        margin-left: 28%;
-    }
     #contact{
         padding-top: 2600px;
     }
@@ -826,4 +802,3 @@ body{
         padding-top: 3000px;
     }
 }
-
