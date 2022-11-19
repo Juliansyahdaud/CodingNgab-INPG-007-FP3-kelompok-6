@@ -5,13 +5,15 @@
     --third-color : #E73587;
     --fourth-color: #8C32F0;
     --text-color: #2B2B2B;
+    --text-color1:#F2F2F2;
 }
 .dark{
-    --main-color: #FF6768;
-    --second-color: #17223B;
-    --third-color: #d42fc6;
-   --fourth-color: #BC6FF1;
-   --text-color: #E0C097;
+    --main-color: #000000;
+    --second-color: #282A3A;
+    --third-color: #16697A;
+   --fourth-color: #30475E;
+   --text-color: #F0A500;
+   --text-color1:#F0A500;
    background-color: var(--second-color);
 }
 * {
@@ -19,6 +21,7 @@
     padding: 0;
     font-family: 'Basic';
     list-style: none;
+    transition: 1s;
 }
 html{
     overflow-x: hidden;
@@ -75,7 +78,7 @@ body{
 #header .header-menu ul li a{
     text-decoration: none;
     font-weight: 400;
-    color: var(--main-color);
+    color: var(--text-color);
 }
 #header .header-menu ul li a.btn-header-menu{
     color: var(--second-color);
@@ -103,7 +106,7 @@ body{
     padding-top: 172px;
 }
 #hero .hero-text h1 {
-    color: var(--main-color);
+    color: var(--text-color);
     font-size: 90px;
     font-weight: 400;
     margin-bottom: 25px;
@@ -186,7 +189,7 @@ body{
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    color: var(--main-color);
+    color: var(--text-color);
 }
 .bottom-line {
     text-decoration: underline solid var(--third-color);
@@ -220,7 +223,7 @@ body{
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    color: var(--main-color);
+    color: var(--text-color);
   }
   .container {
     max-width: 1100px;
@@ -336,7 +339,7 @@ body{
     padding-top: 90px;
 }  
 .ow-title{
-    color: var(--second-color);
+    color: var(--text-color1);
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
@@ -347,14 +350,14 @@ body{
     display: flex;
     margin-top: 60px;
     margin-left: 135px;
-    color: var(--second-color);
+    color: var(--text-color1);
 }
 .ow1_img {
     width: 587px;
     height: 390px;
 }
 .ow1_1{
-    color: var(--second-color);
+    color: var(--text-color1);
     margin-left: 20px;
     text-align: left;
 }
@@ -378,14 +381,14 @@ body{
     display: flex;
     margin-top: 70px;
     margin-left: 257px;
-    color: var(--second-color);
+    color: var(--text-color1);
 }
 .ow2_img {
     width: 587px;
     height: 390px;
 }
 .ow2_1{
-    color: var(--second-color);
+    color: var(--text-color1);
     margin-right: 20px;
     text-align: right;
 }
@@ -432,11 +435,13 @@ body{
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
+    color: var(--text-color);
 }
 #contact .p2{
     font-weight: 400;
     font-size: 90px;
     line-height: 110px;
+    color: var(--text-color);
 }
 #contact .p2 span{
     color: var(--third-color);
@@ -514,7 +519,7 @@ body{
     width: 100%;
     left: 0;
     bottom: 0;
-    color: var(--second-color);
+    color: var(--text-color);
     background-color: var(--main-color);
 }
 #topBtn {
@@ -871,9 +876,11 @@ body{
     }
     #contact .p1{
         font-size: 15px;
+        color: var(--text-color);
     }
     #contact .p2{
         font-size: 30px;
+        color: var(--text-color);
     }
     #contact1 .input1 {
         width: 400px;
@@ -891,6 +898,10 @@ body{
     }
 }
 @media screen and (max-width: 564px) {
+    #about-us .about-text{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
     #our-work{
         height: 1400px;
     }
